@@ -1,0 +1,77 @@
+/* 13. SECCIÓN SOBRE NOSOTROS (NUEVO) */
+.seccion-historia {
+    padding: 50px 0;
+}
+
+.bloque-nosotros {
+    margin-bottom: 60px;
+}
+
+.bloque-nosotros img {
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+}
+
+.subtitulo-nosotros {
+    font-family: 'Georgia', serif;
+    font-size: 28px;
+    color: #211b15;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.texto-nosotros {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #333333;
+    font-family: 'Georgia', serif;
+    margin-bottom: 15px;
+}
+
+/* Pilares de la Marca (Contenedor de tarjetas) */
+.seccion-pilares {
+    background-color: rgba(235, 225, 205, 0.4); 
+    padding: 50px 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Tarjeta individual de pilar */
+.card-pilar {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.card-pilar:hover {
+    transform: translateY(-5px); 
+}
+
+.icono-pilar {
+    font-size: 38px;
+    color: #246B2C; 
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.titulo-pilar {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #211b15;
+}
+
+.texto-pilar {
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.5;
+    margin: 0;
+}

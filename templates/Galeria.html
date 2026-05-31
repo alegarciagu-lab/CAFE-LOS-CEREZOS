@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Café Los Cerezos - Galería</title> <!-- Título de la pestaña -->
+
+    <!-- FAVICON (Ícono de la pestaña) -->
+    <link rel="icon" href="Logo-cafe.png" type="image/png">
+
+    <!-- TIPOGRAFÍA -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+
+    <!-- ESTILOS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- ESTILOS DE SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- CONEXIÓN A TU ARCHIVO DE ESTILOS -->
+    <link rel="stylesheet" href="inicio.css">
+
+    <!-- ICONOS DE BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+<!-- PORTADA / HERO (HEAD) -->
+<header class="hero">
+    <!-- Capa oscura para legibilidad del menú -->
+    <div class="overlay"></div>
+
+    <!-- LOGO VERTICAL -->
+    <div class="logo-vertical">
+        <img src="Logo-cafe.png" alt="Logo Café Los Cerezos">
+    </div>
+
+  <!-- MENÚ TRANSLÚCIDO UNIFICADO -->
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <!-- Te lleva a la sección de productos en el inicio -->
+        <li><a href="index.html#productos">Productos</a></li> 
+        <!-- Te lleva a la página independiente de galería -->
+        <li><a href="Galeria.html">Galería</a></li>
+        <!-- Te lleva a la sección de Quiénes Somos en el inicio -->
+        <li><a href="index.html#quienes">Sobre nosotros</a></li>
+        <!-- Te lleva al footer de contacto en el inicio -->
+        <li><a href="index.html#contacto">Contáctenos</a></li>
+    </ul>
+</nav>
+
+    <!-- ONDA DE TRANSICIÓN INFERIOR -->
+    <div class="onda-svg">
+        <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+            <path fill="#f5f1e8" d="M0,80 
+            C120,140 240,20 360,80 
+            C480,140 600,20 720,80 
+            C840,140 960,20 1080,80 
+            C1200,140 1320,20 1440,80 
+            L1440,150 L0,150 Z">
+            </path>
+        </svg>
+    </div>
+</header>
+
+<!-- CONTENIDO DE LA GALERÍA-->
+<div class="contenido">
+    <section class="container contenedor-galeria">
+        
+        <!-- TÍTULO DE LA SECCIÓN -->
+        <div class="text-center mb-5">
+            <h2 class="section-titulo">Nuestra Galería</h2>
+            <p class="text-intro-productos mt-4">
+                Te invitamos a recorrer en imágenes el origen de nuestro café, desde el verdor de los cafetales en San Bernardo hasta el delicado proceso artesanal que lo lleva a tu taza.
+            </p>
+        </div>
+
+        <!-- CUADRÍCULA DE FOTOS (Responsive) -->
+        <div class="row g-4">
+            
+            <!-- Foto 1: El Origen / Cultivo -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="item-galeria">
+                    <img src="Finca.jpg" alt="Finca Café Los Cerezos"> 
+                    <div class="overlay-galeria">
+                        <span class="titulo-foto">La Finca El Cerezo</span>
+                        <p class="descripcion-foto">Municipio de San Bernardo, Cundinamarca.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 2: Recolección manual -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="item-galeria">
+                    <img src="Cosecha.jpg" alt="Recolección de café">
+                    <div class="overlay-galeria">
+                        <span class="titulo-foto">Cosecha Seleccionada</span>
+                        <p class="descripcion-foto">Recolección manual de granos en su punto óptimo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 3: Secado artesanal -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="item-galeria">
+                    <img src="Secado.jpg" alt="Secado del café">
+                    <div class="overlay-galeria">
+                        <span class="titulo-foto">Secado Natural</span>
+                        <p class="descripcion-foto">Secado al sol en camas especiales controlando humedad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 4: Tostión controlada -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="item-galeria">
+                    <img src="Tostion.jpg" alt="Tostado de café">
+                    <div class="overlay-galeria">
+                        <span class="titulo-foto">Tostión Artesanal</span>
+                        <p class="descripcion-foto">Desarrollo de aroma y notas frutales únicas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 5: El Producto Final -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="item-galeria">
+                    <img src="Empaque.jpg" alt="Bolsas de café">
+                    <div class="overlay-galeria">
+                        <span class="titulo-foto">Empaque de Origen</span>
+                        <p class="descripcion-foto">Bolsas especiales con filtro para conservar frescura.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 6: Experiencia sensorial -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="item-galeria">
+                    <img src="Cafe-taza-preparado.jpg" alt="Taza de café">
+                    <div class="overlay-galeria">
+                        <span class="titulo-foto">Tu Experiencia Los Cerezos</span>
+                        <p class="descripcion-foto">La culminación de un proceso lleno de pasión.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- Fin de la cuadrícula -->
+    </section>
+</div>
+
+<!-- ONDA TRANSICIÓN FOOTER -->
+<div class="onda-footer">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,60 
+        C120,100 240,20 360,60 
+        C480,100 600,20 720,60 
+        C840,100 960,20 1080,60 
+        C1200,100 1320,20 1440,60 
+        L1440,120 L0,120 Z">
+        </path>
+    </svg>
+</div>
+
+<!-- FOOTER CON MARCA Y CONTACTO -->
+<footer class="footer-cafe text-white py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            
+            <!-- Columna Izquierda: Datos de contacto -->
+            <div class="col-md-8 text-start">
+                <div class="row g-4">
+                    <!-- Correo -->
+                    <div class="col-sm-6 d-flex align-items-center">
+                        <div class="border rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; border-color: rgba(255,255,255,0.3) !important;">
+                            <i class="bi bi-envelope fs-5"></i>
+                        </div>
+                        <div>
+                            <p class="mb-0 fw-bold" style="font-size: 0.85rem; opacity: 0.8;">Correo electrónico</p>
+                            <p class="mb-0">cafeloscerezos@gmail.com</p>
+                        </div>
+                    </div>
+                    <!-- Teléfono -->
+                    <div class="col-sm-6 d-flex align-items-center">
+                        <div class="border rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; border-color: rgba(255,255,255,0.3) !important;">
+                            <i class="bi bi-telephone fs-5"></i>
+                        </div>
+                        <div>
+                            <p class="mb-0 fw-bold" style="font-size: 0.85rem; opacity: 0.8;">Teléfono</p>
+                            <p class="mb-0">3215413928</p>
+                        </div>
+                    </div>
+                    <!-- Web -->
+                    <div class="col-sm-6 d-flex align-items-center">
+                        <div class="border rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; border-color: rgba(255,255,255,0.3) !important;">
+                            <i class="bi bi-globe fs-5"></i>
+                        </div>
+                        <div>
+                            <p class="mb-0 fw-bold" style="font-size: 0.85rem; opacity: 0.8;">Página web</p>
+                            <p class="mb-0">www.cafeloscerezos.com</p>
+                        </div>
+                    </div>
+                    <!-- Instagram -->
+                    <div class="col-sm-6 d-flex align-items-center">
+                        <div class="border rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; border-color: rgba(255,255,255,0.3) !important;">
+                            <i class="bi bi-instagram fs-5"></i>
+                        </div>
+                        <div>
+                            <p class="mb-0 fw-bold" style="font-size: 0.85rem; opacity: 0.8;">Instagram</p>
+                            <p class="mb-0">@cafeloscerezos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Bloque del Logo  -->
+            <div class="col-md-4 text-md-end text-center mt-4 mt-md-0">
+                <div class="marca-footer d-inline-block">
+                    <img src="Logo-cafe.png" alt="Logo Café Los Cerezos" style="width: 150px; box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!-- SCRIPTS DE BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

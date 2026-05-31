@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Café Los Cerezos - Contáctenos</title> <!-- Título de la pestaña -->
+
+    <!-- FAVICON (Ícono de la pestaña) -->
+    <link rel="icon" href="Logo-cafe.png" type="image/png">
+
+    <!-- TIPOGRAFÍA -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+
+    <!-- ESTILOS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- ESTILOS DE SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- CONEXIÓN A TU ARCHIVO DE ESTILOS -->
+    <link rel="stylesheet" href="inicio.css">
+
+    <!-- ICONOS DE BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+<!-- PORTADA / HERO (HEAD) -->
+<header class="hero">
+    <!-- Capa oscura para legibilidad del menú -->
+    <div class="overlay"></div>
+
+    <!-- LOGO VERTICAL (Alineado a la izquierda con 40px de margen) -->
+    <div class="logo-vertical">
+        <img src="Logo-cafe.png" alt="Logo Café Los Cerezos">
+    </div>
+
+    <!-- MENÚ TRANSLÚCIDO UNIFICADO -->
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <!-- Te lleva a la sección de productos en el inicio -->
+        <li><a href="index.html#productos">Productos</a></li> 
+        <!-- Te lleva a la página independiente de galería -->
+        <li><a href="Galeria.html">Galería</a></li>
+        <!-- Te lleva a la sección de Quiénes Somos en el inicio -->
+        <li><a href="index.html#quienes">Sobre nosotros</a></li>
+        <!-- Te lleva al footer de contacto en el inicio -->
+        <li><a href="index.html#contacto">Contáctenos</a></li>
+    </ul>
+</nav>
+
+    <!-- ONDA DE TRANSICIÓN INFERIOR -->
+    <div class="onda-svg">
+        <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+            <path fill="#f5f1e8" d="M0,80 
+            C120,140 240,20 360,80 
+            C480,140 600,20 720,80 
+            C840,140 960,20 1080,80 
+            C1200,140 1320,20 1440,80 
+            L1440,150 L0,150 Z">
+            </path>
+        </svg>
+    </div>
+</header>
+
+<!--  CONTENIDO DE CONTACTO-->
+<div class="contenido">
+    <section class="container seccion-contacto">
+        
+        <!-- TÍTULO DE LA SECCIÓN -->
+        <div class="text-center mb-5">
+            <h2 class="section-titulo">Ponte en contacto</h2>
+            <p class="text-intro-productos mt-4">
+                ¿Tienes alguna duda sobre nuestros productos, quieres realizar un pedido especial o visitarnos en San Bernardo? Escríbenos y te responderemos lo antes posible.
+            </p>
+        </div>
+
+        <div class="row g-5 align-items-stretch">
+            
+            <!-- Columna Izquierda: Tarjeta de Información de Contacto -->
+            <div class="col-12 col-lg-5">
+                <div class="tarjeta-contacto-info">
+                    <h3 class="titulo-contacto-bloque">Nuestros Datos</h3>
+                    
+                    <!-- Dirección -->
+                    <div class="d-flex align-items-start item-contacto-detalle">
+                        <span class="icono-contacto-detalle"><i class="bi bi-geo-alt-fill"></i></span>
+                        <div class="texto-contacto-detalle">
+                            <h5>Ubicación de la Finca</h5>
+                            <p>Finca El Cerezo, Municipio de San Bernardo, Cundinamarca, Colombia.</p>
+                        </div>
+                    </div>
+
+                    <!-- Teléfono -->
+                    <div class="d-flex align-items-start item-contacto-detalle">
+                        <span class="icono-contacto-detalle"><i class="bi bi-telephone-fill"></i></span>
+                        <div class="texto-contacto-detalle">
+                            <h5>Línea Directa / WhatsApp</h5>
+                            <p>+57 321 541 3928</p>
+                        </div>
+                    </div>
+
+                    <!-- Correo -->
+                    <div class="d-flex align-items-start item-contacto-detalle">
+                        <span class="icono-contacto-detalle"><i class="bi bi-envelope-fill"></i></span>
+                        <div class="texto-contacto-detalle">
+                            <h5>Correo Electrónico</h5>
+                            <p>cafeloscerezos@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Horarios -->
+                    <div class="d-flex align-items-start item-contacto-detalle">
+                        <span class="icono-contacto-detalle"><i class="bi bi-clock-fill"></i></span>
+                        <div class="texto-contacto-detalle">
+                            <h5>Atención al Cliente</h5>
+                            <p>Lunes a Sábado: 8:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Formulario de Contacto -->
+            <div class="col-12 col-lg-7">
+                <div class="form-contacto-box">
+                    <h3 class="titulo-contacto-bloque mb-4">Envíanos un Mensaje</h3>
+                    
+                    <form action="#" method="POST">
+                        <div class="row g-3">
+                            <!-- Nombre -->
+                            <div class="col-12 col-md-6">
+                                <label for="nombre" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre..." required>
+                            </div>
+                            <!-- Teléfono -->
+                            <div class="col-12 col-md-6">
+                                <label for="telefono" class="form-label">Número de Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" placeholder="Ej: 3215413928">
+                            </div>
+                            <!-- Correo -->
+                            <div class="col-12">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="nombre@correo.com" required>
+                            </div>
+                            <!-- Mensaje -->
+                            <div class="col-12">
+                                <label for="mensaje" class="form-label">Mensaje o Consulta</label>
+                                <textarea class="form-control" id="mensaje" rows="5" placeholder="Cuéntanos en qué te podemos ayudar..." required></textarea>
+                            </div>
+                            <!-- Botón de Enviar -->
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn-enviar-contacto">
+                                    Enviar Mensaje
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div> <!-- Fin de la fila -->
+    </section>
+</div>
+
+<!-- ONDA TRANSICIÓN FOOTER -->
+<div class="onda-footer">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,60 
+        C120,100 240,20 360,60 
+        C480,100 600,20 720,60 
+        C840,100 960,20 1080,60 
+        C1200,100 1320,20 1440,60 
+        L1440,120 L0,120 Z">
+        </path>
+    </svg>
+</div>
+
+<!-- FOOTER CON MARCA Y CONTACTO  -->
+<footer class="footer-cafe text-white py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            
+            <!-- Columna Izquierda: Datos de contacto -->
+            <div class="col-md-8 text-start">
+                <div class="row g-4">
+                    <!-- Correo -->
+                    <div class="col-sm-6 d-flex align-items-center">
+                        <div class="border rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; border-color: rgba(255,255,255,0.3) !important;">
+                            <i class="bi bi-envelope fs-5"></i>
+                        </div>
+                        <div>
+                            <p class="mb-0 fw-bold" style="font-size: 0.85rem; opacity: 0.8;">Correo electrónico</p>
+                            <p class="mb-0">cafeloscerezos@gmail.com</p>
+                        </div>
+                    </div>
+                    <!-- Teléfono -->
+                    <div class="col-sm-6 d-flex align-items-center">
+                        <div class="border rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; border-color: rgba(255,255,255,0.3) !important;">
+                            <i class="bi bi-telephone fs-5"></i>
+                        </div>
+                        <div>
+                            <p class="mb-0 fw-bold" style="font-size: 0.85rem; opacity: 0.8;">Teléfono</p>
+                            <p class="mb-0">3215413928</p>
+                        </div>
+                    </div>
+                    <!-- Web -->
+                    <div class="col-sm-6 d-flex align-items-center">
+                        <div class="border rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; border-color: rgba(255,255,255,0.3) !important;">
+                            <i class="bi bi-globe fs-5"></i>
+                        </div>
+                        <div>
+                            <p class="mb-0 fw-bold" style="font-size: 0.85rem; opacity: 0.8;">Página web</p>
+                            <p class="mb-0">www.cafeloscerezos.com</p>
+                        </div>
+                    </div>
+                    <!-- Instagram -->
+                    <div class="col-sm-6 d-flex align-items-center">
+                        <div class="border rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; border-color: rgba(255,255,255,0.3) !important;">
+                            <i class="bi bi-instagram fs-5"></i>
+                        </div>
+                        <div>
+                            <p class="mb-0 fw-bold" style="font-size: 0.85rem; opacity: 0.8;">Instagram</p>
+                            <p class="mb-0">@cafeloscerezos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Bloque del Logo -->
+            <div class="col-md-4 text-md-end text-center mt-4 mt-md-0">
+                <div class="marca-footer d-inline-block">
+                    <img src="Logo-cafe.png" alt="Logo Café Los Cerezos" style="width: 150px; box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!-- SCRIPTS DE BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

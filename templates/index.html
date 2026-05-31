@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Café Los Cerezos</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="Logo-cafe.png" type="image/png">
+
+    <!-- TIPOGRAFÍA -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+
+    <!-- ESTILOS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- NUEVO: ESTILOS DE SWIPER (SLIDER HORIZONTAL) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="inicio.css">
+
+    <!-- ICONOS DE BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+<!-- PORTADA -->
+<header class="hero">
+    <!-- LOGO -->
+    <div class="logo-vertical">
+        <img src="Logo-cafe.png" alt="Logo Café Los Cerezos">
+    </div>
+
+  <!-- MENÚ-->
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <!-- Te lleva a la sección de productos en el inicio -->
+        <li><a href="index.html#productos">Productos</a></li> 
+        <!-- Te lleva a la página independiente de galería -->
+        <li><a href="Galeria.html">Galería</a></li>
+        <!-- Te lleva a la sección de Quiénes Somos en el inicio -->
+        <li><a href="index.html#quienes">Sobre nosotros</a></li>
+        <!-- Te lleva al footer de contacto en el inicio -->
+        <li><a href="index.html#contacto">Contáctenos</a></li>
+    </ul>
+</nav>
+
+    <!-- ONDA -->
+    <div class="onda-svg">
+        <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+            <path d="M0,80 
+            C120,140 240,20 360,80 
+            C480,140 600,20 720,80 
+            C840,140 960,20 1080,80 
+            C1200,140 1320,20 1440,80 
+            L1440,150 L0,150 Z">
+            </path>
+        </svg>
+    </div>
+
+</header>
+
+<!-- CONTENIDO -->
+<div class="contenido">
+
+<!-- QUIÉNES SOMOS -->
+    <section id="quienes" class="quienes">
+        <div class="container">
+             <div class="row align-items-center"> 
+
+                <!-- Columna de Texto -->
+                <div class="col-md-6">
+                    
+                    <!-- El título de quienes somos -->
+                    <h2 class="titulo-quienes">¿Quienes somos?</h2>
+                    
+                    <!-- Tarjeta de Texto debajo -->
+                    <div class="card-texto-quienes">
+                        <p class="parrafo-quienes">
+                            Café Los Cerezos es un proyecto cafetero innovador que nace en la finca del mismo nombre, ubicada en el municipio de San Bernardo, Cundinamarca, una zona reconocida por su clima y suelos ideales para el cultivo de café de alta calidad.
+                        </p>
+                        <a href="#" class="link-quienes-mas">Más información...</a>
+                    </div>
+
+                </div>
+
+                <!-- Columna de Imagen -->
+                <div class="col-md-6 text-center">
+                    <img src="Cafe y taza.png" class="img-cafe-quienes" alt="Bulto de café">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+<section id="productos" class="container">
+
+        <!-- CONTENEDOR PARA CENTRAR EL TÍTULO CON LA FRANJA NARANJA-->
+        <div class="contenedor-titulo-productos">
+            <h2 class="section-titulo">
+                Conoce nuestros productos
+            </h2>
+        </div>
+
+        <!-- TEXTO DESCRIPCIÓN -->
+        <p class="text-intro-productos">
+            Desde una altura de 1,611 metros sobre el nivel del mar (msnm), el verdor de las montañas, hasta tu mesa. 
+            Te ofrecemos nuestro café en bolsas con filtro de olor de diferentes gramajes y con la molienda de tu preferencia 
+            para que la experiencia sensorial no se pierda.
+            <a href="#" class="link-mas-info">Más información...</a>
+        </p>
+
+
+        <!-- SLIDER DE PRODUCTOS -->
+        <div class="swiper swiper-productos">
+            <div class="swiper-wrapper">
+
+                <!-- PRODUCTO 1: Bolsa de cafe -->
+                <div class="swiper-slide">
+                    <div class="contenedor-producto-mockup">
+                        <div class="producto-visual">
+                            <div class="circulo-verde-productos">
+                                <img src="Bolsa de cafe.png" class="img-producto-dorado" alt="Bolsa de café">
+                            </div>
+                        </div>
+                        <div class="producto-info-container">
+                            <div class="tarjeta-blanca-info">
+                                <h4 class="producto-titulo-mockup">Bolsa de cafe en grano tostado de 1 Kg</h4>
+                                <p class="producto-precio-mockup">$ 10,000 COP</p>
+                            </div>
+                            <button class="btn-carrito-mockup">
+                                <span class="texto-btn">Añadir al carrito</span>
+                                <span class="icono-carrito-badge">🛒</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 2: Bulto de café -->
+                <div class="swiper-slide">
+                    <div class="contenedor-producto-mockup">
+                        <div class="producto-visual">
+                            <div class="circulo-verde-productos">
+                                <img src="Bulto de cafe.png" class="img-producto-dorado" alt="Saco de café">
+                            </div>
+                        </div>
+                        <div class="producto-info-container">
+                            <div class="tarjeta-blanca-info">
+                                <h4 class="producto-titulo-mockup">Bulto de café en grano tostado 12 Kg</h4>
+                                <p class="producto-precio-mockup">$ 110,000 COP</p>
+                            </div>
+                            <button class="btn-carrito-mockup">
+                                <span class="texto-btn">Añadir al carrito</span>
+                                <span class="icono-carrito-badge">🛒</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 3: Bolsa de café molido -->
+                <div class="swiper-slide">
+                    <div class="contenedor-producto-mockup">
+                        <div class="producto-visual">
+                            <div class="circulo-verde-productos">
+                                <img src="Cafe molido.png" class="img-producto-dorado" alt="Café molido">
+                            </div>
+                        </div>
+                        <div class="producto-info-container">
+                            <div class="tarjeta-blanca-info">
+                                <h4 class="producto-titulo-mockup">Bolsa de café molido de 1 Kg</h4>
+                                <p class="producto-precio-mockup">$ 15,000 COP</p>
+                            </div>
+                            <button class="btn-carrito-mockup">
+                                <span class="texto-btn">Añadir al carrito</span>
+                                <span class="icono-carrito-badge">🛒</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- PRODUCTO 4: Taza de cafe -->
+                <div class="swiper-slide">
+                    <div class="contenedor-producto-mockup">
+                        <div class="producto-visual">
+                            <div class="circulo-verde-productos">
+                                <img src="Taza de cafe.png" class="img-producto-dorado" alt="Taza de cafe">
+                            </div>
+                        </div>
+                        <div class="producto-info-container">
+                            <div class="tarjeta-blanca-info">
+                                <h4 class="producto-titulo-mockup">Taza de cafe</h4>
+                                <p class="producto-precio-mockup">$ 30,000 COP</p>
+                            </div>
+                            <button class="btn-carrito-mockup">
+                                <span class="texto-btn">Añadir al carrito</span>
+                                <span class="icono-carrito-badge">🛒</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- PRODUCTO 5: Vaso para bebidas calientes o frias-->
+                <div class="swiper-slide">
+                    <div class="contenedor-producto-mockup">
+                        <div class="producto-visual">
+                            <div class="circulo-verde-productos">
+                                <img src="Vaso para bebidas calientes o frias.png" class="img-producto-dorado" alt="Vaso para bebidas frias o calientes">
+                            </div>
+                        </div>
+                        <div class="producto-info-container">
+                            <div class="tarjeta-blanca-info">
+                                <h4 class="producto-titulo-mockup">Vaso para bebidas calientes o frias</h4>
+                                <p class="producto-precio-mockup">$ 45,000 COP</p>
+                            </div>
+                            <button class="btn-carrito-mockup">
+                                <span class="texto-btn">Añadir al carrito</span>
+                                <span class="icono-carrito-badge">🛒</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- PRODUCTO 2: Gorras personalizadas -->
+                <div class="swiper-slide">
+                    <div class="contenedor-producto-mockup">
+                        <div class="producto-visual">
+                            <div class="circulo-verde-productos">
+                                <img src="Gorras personalizadas.png" class="img-producto-dorado" alt="Gorras personalizadas">
+                            </div>
+                        </div>
+                        <div class="producto-info-container">
+                            <div class="tarjeta-blanca-info">
+                                <h4 class="producto-titulo-mockup">Gorras personalizadas</h4>
+                                <p class="producto-precio-mockup">$ 50,000 COP</p>
+                            </div>
+                            <button class="btn-carrito-mockup">
+                                <span class="texto-btn">Añadir al carrito</span>
+                                <span class="icono-carrito-badge">🛒</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Cierre -->
+
+            <!-- ELEMENTOS DE NAVEGACIÓN Y PAGINACIÓN DE SWIPER -->
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </section>
+</div>
+
+<!-- FRASE -->
+<section class="frase-cafe my-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- IMAGEN -->
+            <div class="col-md-6">
+                <img src="Bulto de cafe.png" class="img-fluid img-frase" alt="Frase café">
+            </div>
+            <!-- TEXTO -->
+            <div class="col-md-6 text-center">
+                <h3 class="texto-frase">
+                    “Descubre el mundo del café en cada sorbo.
+                    Únete a nuestras catas y vive la experiencia.”
+                </h3>
+                <p class="mas-info">
+                    Más información...
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ONDA FOOTER -->
+<div class="onda-footer">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,60 
+        C120,100 240,20 360,60 
+        C480,100 600,20 720,60 
+        C840,100 960,20 1080,60 
+        C1200,100 1320,20 1440,60 
+        L1440,120 L0,120 Z">
+        </path>
+    </svg>
+</div>
+
+<!-- FOOTER -->
+<footer id="contacto" class="footer-cafe text-white py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Columna Izquierda: Datos de contacto -->
+            <div class="col-md-8 text-start">
+    <div class="row g-4">
+        <!-- Correo -->
+        <div class="col-sm-6 d-flex align-items-center">
+            <div class="border rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; border-color: rgba(255,255,255,0.3) !important;">
+                <i class="bi bi-envelope fs-5"></i>
+            </div>
+            <div>
+                <p class="mb-0 fw-bold" style="font-size: 0.85rem; opacity: 0.8;">Correo electrónico</p>
+                <p class="mb-0">cafeloscerezos@gmail.com</p>
+            </div>
+        </div>
+        <!-- Teléfono -->
+        <div class="col-sm-6 d-flex align-items-center">
+            <div class="border rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; border-color: rgba(255,255,255,0.3) !important;">
+                <i class="bi bi-telephone fs-5"></i>
+            </div>
+            <div>
+                <p class="mb-0 fw-bold" style="font-size: 0.85rem; opacity: 0.8;">Teléfono</p>
+                <p class="mb-0">3215413928</p>
+            </div>
+        </div>
+        <!-- Web -->
+        <div class="col-sm-6 d-flex align-items-center">
+            <div class="border rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; border-color: rgba(255,255,255,0.3) !important;">
+                <i class="bi bi-globe fs-5"></i>
+            </div>
+            <div>
+                <p class="mb-0 fw-bold" style="font-size: 0.85rem; opacity: 0.8;">Página web</p>
+                <p class="mb-0">www.cafeloscerezos.com</p>
+            </div>
+        </div>
+        <!-- Instagram -->
+        <div class="col-sm-6 d-flex align-items-center">
+            <div class="border rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; border-color: rgba(255,255,255,0.3) !important;">
+                <i class="bi bi-instagram fs-5"></i>
+            </div>
+            <div>
+                <p class="mb-0 fw-bold" style="font-size: 0.85rem; opacity: 0.8;">Instagram</p>
+                <p class="mb-0">@cafeloscerezos</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- Columna Derecha: Bloque del Logo -->
+            <div class="col-md-4 text-md-end text-center mt-4 mt-md-0">
+                  <div class="marca-footer d-inline-block">
+                   <img src="Logo-cafe.png" alt="Logo Café Los Cerezos" style="width: 150px; box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);">
+            </div>
+          </div>
+        </div>
+    </div>
+</footer>
+
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- NUEVO: SCRIPT DE SWIPER FUNCIONAMIENTO Y CARRUSEL -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- SCRIPT CHATBOT-->
+<script>
+
+
+// 1. INICIALIZAR SWIPER PARA LOS PRODUCTOS
+const swiperProductos = new Swiper('.swiper-productos', {
+    slidesPerView: 1,      /* 1 producto en pantallas móviles */
+    spaceBetween: 20,     /* Espacio entre productos */
+    loop: true,            /* Infinito */
+    grabCursor: true,      /* Cursor mano */
+    
+
+    // MOVIMIENTO AUTOMÁTICO //
+
+    autoplay: {
+        delay: 3000,                  /* Se desliza cada 3 segundos*/
+        disableOnInteraction: false,   /* No se detiene aunque el usuario lo mueva manualmente */
+    },
+    // FIN //
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2, /* 2 productos en tablets */
+            spaceBetween: 30
+        },
+        992: {
+            slidesPerView: 3, /* 3 productos en computadoras */
+            spaceBetween: 30
+        }
+    }
+});
+
+
+// 2. FUNCIONES DEL CHATBOT
+
+function enviarMensaje() {
+    let input = document.getElementById("mensaje");
+    let mensaje = input.value.trim();
+    let chat = document.getElementById("chat");
+
+    if (mensaje === "") return;
+
+    chat.innerHTML += `
+        <div class="mensaje-user">${mensaje}</div>
+    `;
+
+    fetch("http://127.0.0.1:5000/chat", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            mensaje: mensaje
+        })
+    })
+    .then(res => res.json())
+    .then(data => {
+        let respuesta = data.respuesta;
+        let respuestaConLinks = respuesta.replace(
+            /(https?:\/\/[^\s]+)/g,
+            '<br><a href="$1" target="_blank" class="btn-link-chat">Abrir enlace ☕</a>'
+        );
+
+        chat.innerHTML += `
+            <div class="mensaje-bot">${respuestaConLinks}</div>
+        `;
+        chat.scrollTop = chat.scrollHeight;
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        chat.innerHTML += `
+            <div class="mensaje-bot">
+                Alejandra está fuera de servicio un momento ☕
+            </div>
+        `;
+    });
+
+    input.value = "";
+}
+
+// ENTER PARA ENVIAR MENSAJE
+
+document.getElementById("mensaje").addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+        enviarMensaje();
+    }
+});
+
+// SALUDO AUTOMÁTICO AL CARGAR
+window.onload = function() {
+    let chat = document.getElementById("chat");
+    chat.innerHTML += `
+        <div class="mensaje-bot">
+            ¡Hola! ☕ Soy Alejandra, tu barista virtual.
+            ¿Te gustaría conocer nuestra historia o ver nuestros productos?
+        </div>
+    `;
+};
+
+// FUNCIÓN PARA MOSTRAR O OCULTAR LA VENTANA DE CHAT
+function toggleChat() {
+    let chatBox = document.getElementById("miChatBox");
+    let chatToggle = document.querySelector(".chat-toggle");
+    
+    // Si la ventana está oculta, la mostramos y ocultamos el botón flotante
+    if (chatBox.style.display === "none" || chatBox.style.display === "") {
+        chatBox.style.display = "flex";
+        chatToggle.style.display = "none";
+    } else {
+        // Si la ventana está abierta, la ocultamos y volvemos a mostrar el botón flotante
+        chatBox.style.display = "none";
+        chatToggle.style.display = "flex";
+    }
+}
+
+</script>
+
+<!-- BOTÓN FLOTANTE PARA ABRIR EL CHAT -->
+<div class="chat-toggle" onclick="toggleChat()">
+    <img src="Alejandra-avatar.jpeg" alt="Abrir chat" class="avatar-toggle">
+    <span class="chat-badge-icon">☕</span>
+</div>
+
+<!-- CHATBOT -->
+<div class="chat-box" id="miChatBox" style="display: none;">
+
+    <div class="chat-header">
+        <div class="avatar-container">
+            <img src="Alejandra-avatar.jpeg" alt="Alejandra Barista Virtual" class="avatar-img">
+        </div>
+        <div class="chat-header-info">
+            <span class="chat-name">Alejandra</span>
+            <span class="chat-status">Barista Virtual</span>
+        </div>
+        <!-- BOTO DE CERRAR-->
+        <button class="btn-cerrar-chat" onclick="toggleChat()">&times;</button>
+    </div>
+
+    <!-- IMPUT -->
+    <div id="chat"></div>
+
+    <input type="text" id="mensaje" placeholder="Escribe tu mensaje...">
+
+    <button id="btn-enviar" onclick="enviarMensaje()">
+        Enviar
+    </button>
+
+</div>
+
+</body>
+</html>

@@ -79,21 +79,21 @@ def responder(mensaje):
 def home():
     return render_template("index.html")
 
-@app.route("/Productos.html")
+@app.route("/productos.html")
 def productos():
-    return render_template("Productos.html")
+    return render_template("productos.html")
 
-@app.route("/Galeria.html")
+@app.route("/galeria.html")
 def galeria():
-    return render_template("Galeria.html")
+    return render_template("galeria.html")
 
-@app.route("/SobreNosotros.html")
+@app.route("/sobrenosotros.html")
 def sobre_nosotros():
-    return render_template("SobreNosotros.html")
+    return render_template("sobrenosotros.html")
 
-@app.route("/Contactenos.html")
+@app.route("/contactenos.html")
 def contactenos():
-    return render_template("Contactenos.html")
+    return render_template("contactenos.html")
 
 
 

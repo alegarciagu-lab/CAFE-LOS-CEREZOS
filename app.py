@@ -3,8 +3,8 @@ from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 
 # Flask para que busque los archivos estáticos (CSS/imágenes) en 'static'
-# permitE acceder a ellos(sin cambiar tus rutas de HTML)
-app = Flask(__name__, static_folder='static', static_url_path='')
+# Ajustamos static_url_path a '/static' para que coincida con tus rutas de HTML
+app = Flask(__name__, static_folder='static', static_url_path='/static')
 CORS(app)
 
 # NUMERO DE WHAT
@@ -70,35 +70,31 @@ def responder(mensaje):
     return "No estoy segura de eso, pero puedo contarte sobre nuestros precios, nuestra finca en San Bernardo o darte nuestro Instagram. ☕"
 
 
-
-# RUTAS PARA NAVEGAR EN LA PÁGINA WEB
-
+# RUTAS PARA NAVEGAR EN LA PÁGINA WEB (Todas corregidas a minúsculas)
 
 @app.route("/")
 @app.route("/index.html")
 def home():
     return render_template("index.html")
 
-@app.route("/Productos.html")
+@app.route("/productos.html")
 def productos():
-    return render_template("Productos.html")
+    return render_template("productos.html")
 
-@app.route("/Galeria.html")
+@app.route("/galeria.html")
 def galeria():
-    return render_template("Galeria.html")
+    return render_template("galeria.html")
 
-@app.route("/SobreNosotros.html")
+@app.route("/sobrenosotros.html")
 def sobre_nosotros():
-    return render_template("SobreNosotros.html")
+    return render_template("sobrenosotros.html")
 
-@app.route("/Contactenos.html")
+@app.route("/contactenos.html")
 def contactenos():
-    return render_template("Contactenos.html")
-
+    return render_template("contactenos.html")
 
 
 # RUTA DEL CHATBOT
-
 
 @app.route("/chat", methods=["POST"])
 def chat():
@@ -110,6 +106,5 @@ def chat():
 
 # Inicio de la aplicación
 if __name__ == "__main__":
-    # Render asigna el puerto mediante la variable de entorno 'PORT'
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
